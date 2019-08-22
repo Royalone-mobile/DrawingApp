@@ -1,0 +1,294 @@
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f4" 
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res/com.songu.shadow.drawing">
+	
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    >
+	    <FrameLayout 
+	    android:id="@+id/frameHome"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >	
+		
+	     
+
+	</FrameLayout>	
+
+	</RelativeLayout> 
+    
+    <!-- The navigation drawer -->
+
+	<RelativeLayout
+	   android:id="@+id/navdrawer"
+	   android:layout_width="@dimen/navdrawer_width"
+	   android:layout_height="match_parent"
+	   android:layout_gravity="start"
+	   android:background="@color/drawerback">
+
+		<LinearLayout
+		    android:id="@+id/layoutMenuSignOut"
+		    android:layout_width="wrap_content"
+		    android:layout_height="50dp"
+		    android:layout_alignParentBottom="true"
+		    android:layout_alignParentRight="true"
+		    android:background="@drawable/drawable_layout_rectanglenoradius"
+		    android:clickable="true" >
+
+		    <ImageView
+		        android:id="@+id/imagefromclip"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:src="@drawable/signout" />
+
+		    <TextView
+		        android:id="@+id/Chat"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:layout_gravity="center_vertical"		        
+		        android:gravity="center_vertical"
+		        android:text="Sign Out"
+		        android:layout_marginRight="10dp"
+		        android:textColor="@color/color_white"
+		        android:textSize="18sp" />
+		</LinearLayout>
+
+	    <ScrollView
+	        android:layout_width="@dimen/navdrawer_width"
+	        android:layout_height="match_parent"
+	        android:clickable="true"
+	        android:scrollbars="vertical" 
+	        android:layout_marginBottom = "50dp">
+	
+		    <LinearLayout
+		        android:layout_width="@dimen/navdrawer_width"
+		        android:layout_height="match_parent"		        
+		        android:orientation="vertical">   
+		        
+		        <LinearLayout
+				     android:layout_width="match_parent"
+				     android:layout_marginTop = "10dp"
+				     android:layout_height="100dp"
+				     android:layout_marginLeft = "10dp"
+				     android:id="@+id/layoutMenuProfile"
+				     android:background="@drawable/drawable_layout_rectanglenoradius"
+				     >
+				     
+		           	<com.pkmmte.circularimageview.CircularImageView
+				         android:id="@+id/itemUserImage"
+				         android:layout_width="100dp"
+				         android:layout_height="100dp"
+				         android:clickable="true"
+				         android:scaleType="fitXY"
+				         android:src="@drawable/md"
+				         app:shadow="true" />
+				     <TextView
+				         android:layout_width="wrap_content"
+				     	 android:layout_height="match_parent"
+				         android:id="@+id/txtUserName"
+				         android:text="John Doe" 
+				         android:layout_gravity="center_vertical"
+	                     android:gravity="center_vertical"
+				         android:layout_marginLeft = "5dp"
+				         android:textSize = "18sp"
+				         android:textColor="@color/color_white"
+				     />
+				     <ImageView
+					     android:id="@+id/imagefromclip"
+					     android:layout_width="wrap_content"
+					     android:layout_height="50dp"
+					     android:src="@drawable/editicon" 
+					     android:layout_gravity="center_vertical"/>
+		    	</LinearLayout>
+		    	
+		        
+
+				 <LinearLayout
+				     android:layout_width="match_parent"
+				     android:layout_height="50dp"
+				     android:id="@+id/layoutMenuHome"
+				     android:background="@drawable/drawable_layout_rectanglenoradius"
+				     >
+			        
+				     <ImageView
+				     android:id="@+id/imagefromclip"
+				     android:layout_width="wrap_content"
+				     android:layout_height="match_parent"
+				     android:src="@drawable/home" />
+
+				     <TextView
+				         android:layout_width="match_parent"
+				     	 android:layout_height="match_parent"
+				         android:id="@+id/txt_to_name"
+				         android:text="Home" 
+				         android:layout_gravity="center_vertical"
+	                     android:gravity="center_vertical"
+				         android:layout_marginLeft = "5dp"
+				         android:textSize = "18sp"
+				         android:textColor="@color/color_white"
+				     />
+		    	</LinearLayout>
+
+		    	<LinearLayout
+		    	    android:id="@+id/layoutMenuCapture"
+		    	    android:layout_width="match_parent"
+		    	    android:layout_height="50dp"
+		    	    android:background="@drawable/drawable_layout_rectanglenoradius" >
+			        
+				     <ImageView
+				     android:id="@+id/imagefromclip"
+				     android:layout_width="wrap_content"
+				     android:layout_height="match_parent"
+				     android:src="@drawable/capture" />
+
+				     <TextView
+				         android:layout_width="match_parent"
+				     	 android:layout_height="match_parent"
+				         android:id="@+id/txt_to_name"
+				         android:text="Color Capture" 
+				         android:layout_gravity="center_vertical"
+	                     android:gravity="center_vertical"
+				         android:layout_marginLeft = "5dp"
+				         android:textSize = "18sp"
+				         android:textColor="@color/color_white"
+				     />
+		    	</LinearLayout>
+		    	
+		    	<LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="50dp" 
+			        android:id="@+id/layoutMenuLib"
+			        android:background="@drawable/drawable_layout_rectanglenoradius">
+			        
+				     <ImageView
+				     android:id="@+id/imagefromclip"
+				     android:layout_width="wrap_content"
+				     android:layout_height="match_parent"
+				     android:src="@drawable/library" />
+
+				     <TextView
+				         android:layout_width="match_parent"
+				     	 android:layout_height="match_parent"
+				         android:id="@+id/txt_to_name"
+				         android:text="Color Library" 
+				         android:layout_gravity="center_vertical"
+	                     android:gravity="center_vertical"
+				         android:layout_marginLeft = "5dp"
+				         android:textSize = "18sp"
+				         android:textColor="@color/color_white"
+				     />
+		    	</LinearLayout>
+		    	
+		    	<LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="50dp" 
+			        android:id="@+id/layoutMenuMatch"
+			        android:background="@drawable/drawable_layout_rectanglenoradius">
+			        
+				     <ImageView
+				     android:id="@+id/imagefromclip"
+				     android:layout_width="wrap_content"
+				     android:layout_height="match_parent"
+				     android:src="@drawable/match" />
+
+				     <TextView
+				         android:layout_width="match_parent"
+				     	 android:layout_height="match_parent"
+				         android:id="@+id/txt_to_name"
+				         android:text="Color Match" 
+				         android:layout_gravity="center_vertical"
+	                     android:gravity="center_vertical"
+				         android:layout_marginLeft = "5dp"
+				         android:textSize = "18sp"
+				         android:textColor="@color/color_white"
+				     />
+		    	</LinearLayout>
+		    	
+		    	<LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="50dp" 
+			        android:id="@+id/layoutMenuFriend"
+			        android:background="@drawable/drawable_layout_rectanglenoradius">
+			        
+				     <ImageView
+				     android:id="@+id/imagefromclip"
+				     android:layout_width="wrap_content"
+				     android:layout_height="match_parent"
+				     android:src="@drawable/friend" />
+
+				     <TextView
+				         android:layout_width="match_parent"
+				     	 android:layout_height="match_parent"
+				         android:id="@+id/txt_to_name"
+				         android:text="Friends" 
+				         android:layout_gravity="center_vertical"
+	                     android:gravity="center_vertical"
+				         android:layout_marginLeft = "5dp"
+				         android:textSize = "18sp"
+				         android:textColor="@color/color_white"
+				     />
+		    	</LinearLayout>
+		    	
+		    	<LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="50dp" 
+			        android:id="@+id/layoutMenuChat"
+			        android:background="@drawable/drawable_layout_rectanglenoradius">
+			        
+				     <ImageView
+				     android:id="@+id/imagefromclip"
+				     android:layout_width="wrap_content"
+				     android:layout_height="match_parent"
+				     android:src="@drawable/chat" />
+
+				     <TextView
+				         android:layout_width="match_parent"
+				     	 android:layout_height="match_parent"
+				         android:id="@+id/txtMenuChat"
+				         android:text="Chat" 
+				         android:layout_gravity="center_vertical"
+	                     android:gravity="center_vertical"
+				         android:layout_marginLeft = "5dp"
+				         android:textSize = "18sp"
+				         android:textColor="@color/color_white"
+				     />
+		    	</LinearLayout>
+		    	
+		    	<LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="50dp"
+			        android:id="@+id/layoutMenuSettings" 
+			        android:background="@drawable/drawable_layout_rectanglenoradius">
+			        
+				     <ImageView
+				     android:id="@+id/imagefromclip"
+				     android:layout_width="wrap_content"
+				     android:layout_height="match_parent"
+				     android:src="@drawable/setting" />
+
+				     <TextView
+				         android:layout_width="match_parent"
+				     	 android:layout_height="match_parent"
+				         android:id="@+id/Chat"
+				         android:text="Settings" 
+				         android:layout_gravity="center_vertical"
+	                     android:gravity="center_vertical"
+				         android:layout_marginLeft = "5dp"
+				         android:textSize = "18sp"
+				         android:textColor="@color/color_white"
+				     />
+		    	</LinearLayout>
+		    	
+		    	
+		    </LinearLayout>
+
+		   
+
+	    </ScrollView>
+    </RelativeLayout>	
+ 
+</android.support.v4.widget.DrawerLayout>

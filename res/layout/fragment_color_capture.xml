@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.songu.shadow.drawing.view.ColorCaptureColorWheel
+            android:id="@+id/colorCaptureColorWheel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/add_color"
+            android:layout_margin="10dp" />
+
+        <View
+            android:id="@+id/add_color"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_centerVertical="true" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/colorName"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:weightSum="3" >
+
+            <TextView
+                android:id="@+id/color_cap_rgb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="RGB 20 40 70"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/color_cap_hex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/vertical_dividor"
+                android:drawableRight="@drawable/vertical_dividor"
+                android:gravity="center_horizontal"
+                android:text="HEX: #98JLDE"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/color_cap_cmyk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="CMYK: 14 3 30 17"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/linearLayout1"
+            android:gravity="center"
+            android:orientation="vertical">
+            
+	        <TextView
+	            android:id="@+id/color_match_percent2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/linearLayout1"
+	            android:layout_centerHorizontal="true"
+	            android:text="@string/give_name_to_color"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	        <EditText
+	            android:id="@+id/color_cap_name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/color_match_percent2"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginTop="10dp"
+	            android:background="@drawable/drawable_btn_tabright_greycolor"
+	            android:ems="10"
+	            android:hint="@string/color_name"
+	            android:singleLine="true" >
+	            
+	        </EditText>
+	
+	        <Button
+	            android:id="@+id/color_cap_save"
+	            android:layout_width="200dp"
+	            android:background="@color/purple"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/color_cap_name"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginTop="10dp"
+	            android:textColor="@android:color/white"
+	            android:textAllCaps="true"
+	            android:text="@string/save" />
+        
+        </LinearLayout>
+
+        <com.songu.shadow.drawing.view.ColorCaptureColorWheelSelection
+            android:id="@+id/colorCaptureColorWheelSelection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/add_color"
+            android:layout_alignBottom="@+id/add_color"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:id="@+id/colorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_color"
+            android:layout_centerHorizontal="true"
+            android:text="#COLOR"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </RelativeLayout>
+
+</LinearLayout>

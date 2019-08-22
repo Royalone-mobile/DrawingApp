@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" xmlns:app="http://schemas.android.com/apk/res/com.songu.shadow.drawing">
+    
+     <TextView
+         android:id="@+id/sectionTextView"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="5dp"
+         android:layout_marginTop="5dp"
+         android:background="@color/back"
+         android:paddingLeft="20dp"
+         android:text="A"
+         android:textColor="@color/grayfontcolor"
+         android:textSize="18sp"
+         android:textStyle="bold" />
+
+     <LinearLayout
+         android:id="@+id/sectionLine"
+         android:layout_width="match_parent"
+         android:layout_height="1dp"
+         android:background="@color/grayfontcolor"
+         android:orientation="horizontal" >
+
+     </LinearLayout>
+     
+     <RelativeLayout
+         android:id="@+id/infoRowContainer"
+         android:layout_width="fill_parent"
+         android:layout_height="80dp" >    
+
+	    <com.pkmmte.circularimageview.CircularImageView
+	        android:id="@+id/userImg"
+	        android:layout_width="80dp"
+	        android:layout_height="80dp"
+	        android:layout_marginLeft="10dp"
+	        android:clickable="true"
+	        android:scaleType="fitXY"
+	        android:src="@drawable/md"
+	        app:shadow="true" />
+	    
+	    <TextView
+	        android:id="@+id/nickNameView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_toRightOf="@id/userImg"
+	        android:text="Fullname"
+	        android:textSize="20sp"
+	        android:textStyle="bold" />
+
+	    <ImageView
+	        android:id="@+id/imageView5"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_below="@+id/nickNameView"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="20dp"
+	        android:layout_toRightOf="@+id/userImg"
+	        android:src="@drawable/ic_communication_location_on" />
+	
+	      <TextView
+	          android:id="@+id/fullNameView"
+	          android:layout_width="wrap_content"
+	          android:layout_height="20dp"
+	          android:layout_below="@+id/nickNameView"
+	          android:layout_marginLeft="10dp"
+	          android:layout_marginTop="20dp"
+	          android:layout_toRightOf="@+id/imageView5"
+	          android:gravity="center_vertical"
+	          android:text="Fullname"
+	          android:textSize="14sp"
+	          android:textStyle="bold" />
+
+	</RelativeLayout>
+
+</LinearLayout>

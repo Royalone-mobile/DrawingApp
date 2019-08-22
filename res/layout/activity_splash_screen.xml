@@ -1,0 +1,21 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ImageView
+        android:id="@+id/color_preview_circle"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo_inner"
+		android:layout_gravity="center"/>
+
+    <ImageView
+        android:id="@+id/outer_logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo_outer"
+        android:layout_gravity="center" />
+
+</FrameLayout>

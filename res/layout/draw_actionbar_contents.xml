@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionBarSize"
+    android:orientation="horizontal" >
+
+    <HorizontalScrollView
+        android:id="@+id/draw_actionbar_hrz_undo_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="2dp"
+        android:layout_toLeftOf="@+id/holder" >
+
+        <LinearLayout
+            android:id="@+id/draw_undo_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/draw_brush_size_down"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_hardware_keyboard_arrow_left" />
+
+           
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/holder"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="4"
+        android:gravity="right"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="2dp" >
+
+        <ImageView
+            android:id="@+id/draw_add"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:padding="2dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_content_add_circle" />
+
+        <ImageView
+            android:id="@+id/draw_check"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:padding="2dp"
+            android:src="@drawable/ic_content_done_circle" />
+
+        <ImageView
+            android:id="@+id/draw_delete"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:padding="2dp"
+            android:src="@drawable/ic_content_delete_circle" />
+    </LinearLayout>
+
+</RelativeLayout>

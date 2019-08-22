@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <com.songu.shadow.drawing.view.DrawView
+        android:id="@+id/drawView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+		
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:weightSum="10" 
+            android:id="@+id/expand_rightbar">
+
+			<ImageButton
+			    android:id="@+id/expand_colorbar"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:background="@drawable/ring_more_padding"
+			    android:padding="10dp"
+			    android:scaleType="fitCenter"
+			    android:src="@drawable/doticon"
+			    android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/layout_color_bar"
+                android:layout_width="70dp"
+                android:layout_height="0dp"
+                android:layout_weight="8"
+                android:orientation="vertical"
+                android:background="@color/white_transparent_50_percent" >
+
+                <ListView
+                    android:id="@+id/draw_color_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/draw_brush_size_down" 
+                    android:divider="@android:color/transparent"
+                    android:paddingTop="5dp">
+                    
+                </ListView>
+                
+                <ImageView
+                    android:id="@+id/draw_brush_size_down"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_navigation_arrow_drop_down" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center" >
+            
+            <LinearLayout
+                android:id="@+id/draw_bottom_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/draw_shapes"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ring_more_padding"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_image_details" />
+            
+            <ImageButton
+                android:id="@+id/draw_brushes"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ring_more_padding"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_image_brush" />
+            
+            <ImageButton
+                android:id="@+id/draw_transform"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ring_more_padding"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_color_transform" />
+
+            <ImageButton
+                android:id="@+id/draw_watercolor"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ring_more_padding"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_color_inc" />
+
+            <Button
+                android:id="@+id/draw_brush_size"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ring_more_padding"
+                android:text="3Pt"
+                android:textAllCaps="false" />
+            
+            <ImageButton
+                android:id="@+id/draw_eraser"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ring_more_padding"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_editor_mode_edit" />
+            
+            </LinearLayout>
+
+			<ImageButton
+			    android:id="@+id/expand_toolbar"
+			    android:layout_width="60dp"
+			    android:layout_height="match_parent"
+			    android:background="@drawable/ring_more_padding"
+			    android:padding="10dp"
+			    android:scaleType="fitCenter"
+			    android:src="@drawable/tool"
+			    android:visibility="gone" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    
+
+</LinearLayout>

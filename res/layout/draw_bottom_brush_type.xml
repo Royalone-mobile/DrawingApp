@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="5"
+    android:orientation="horizontal"
+    android:gravity="center" >
+
+    <ImageView
+        android:id="@+id/brush_stencil"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:src="@drawable/brush_stencil" />
+
+    <ImageView
+        android:id="@+id/brush_pencil"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:src="@drawable/brush_pencil" />
+
+    <ImageView
+        android:id="@+id/brush_fat_marker"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:src="@drawable/brush_fat_marker" />
+
+    <ImageView
+        android:id="@+id/brush_marker"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:src="@drawable/brush_marker" />
+
+    <ImageView
+        android:id="@+id/brush_paint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:src="@drawable/brush_paint" />
+
+</LinearLayout>

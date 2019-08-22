@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3" >
+
+    <FrameLayout
+        android:id="@+id/cm_fl"
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:layout_height="0dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:id="@+id/scrlMatchColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fillViewport="true" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:id="@+id/layoutFramePercent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:id="@+id/layoutMatchColors"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical" >
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+            <include
+                android:id="@+id/color_match_add"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                layout="@layout/color_match_item_new" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    
+
+    <RelativeLayout
+        android:id="@+id/color_match_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/darker_gray" >
+
+        <LinearLayout
+            android:id="@+id/layoutMatchTitle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp"
+             >
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/layoutMatchValue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layoutMatchTitle"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+            
+        </LinearLayout>
+
+</RelativeLayout>
+
+</LinearLayout>

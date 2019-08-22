@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="5"
+    android:orientation="horizontal"
+    android:gravity="center" >
+
+    <ImageView
+        android:id="@+id/transform_scale"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:src="@drawable/scaleicon" />
+
+    <ImageView
+        android:id="@+id/transform_free"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:src="@drawable/freetransform" />
+
+    <ImageView
+        android:id="@+id/transform_perspective"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:src="@drawable/perspective" />
+
+    <ImageView
+        android:id="@+id/transform_rotate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:src="@drawable/rotate" />
+
+    <ImageView
+        android:id="@+id/transform_transform1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:src="@drawable/transform1" />
+
+</LinearLayout>
